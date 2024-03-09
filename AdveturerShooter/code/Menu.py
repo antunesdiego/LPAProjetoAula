@@ -19,6 +19,7 @@ class Menu:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_txt(50, "Ocean", (255, 128, 0), ((WIN_WIDTH / 2), 70))
+            self.menu_txt(50, "Shooter", (255, 128, 0), ((WIN_WIDTH / 2), 70))
             pygame.display.flip()
 
     def menu_txt(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
